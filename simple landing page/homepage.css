@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: Arial, Helvitica ,sans-serif;
+}
+.container{
+    height:100vh;
+    width:100%;
+    background: linear-gradient( 90deg, rgb(111, 181, 208) 50%, rgb(23, 165, 222) 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color:white;
+    height:90vh;
+    width:90%;
+}
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    background-color:transparent ;
+    border: 2px solid  rgb(23, 165, 222) ;
+    border-radius: 50%;
+    border-right-color:transparent ;
+    position: relative;
+}
+.navbar .logo::before{
+    content: "DotKey";
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%,-50%);  
+    font-family: "Arizonia", cursive; 
+    font-weight: bold;
+}
+.navbar{
+    margin: auto;
+    width: 90%;
+    height: 15vh;
+}
+.navbar , .navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlist li{
+    list-style: none;
+    padding: 20px;
+}
+.navlist a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+}
+.navlist a:hover{
+    font-weight: bold;
+}
+.product img{
+height: 75vh;
+width: 50%;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product .content{
+    padding-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.content h1{
+    color: rgb(56, 159, 199);
+    font-size: 40px;
+}
+.content h2{
+    font-size: 30px;
+}
+.content p{
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+}
+.content button{
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    background-color: rgb(23, 165, 222) ;
+    cursor: pointer;
+}
+.content button:hover{
+    color: rgb(23, 165, 222) ;
+    background-color: white;
+}
+.trans{
+    display: none;
+}
+.trans span{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: 5px;
+
+
+}
+@media screen and (max-width :1206px){
+    .content h1{
+        font-size: 45px;
+     }
+     .content p{
+        font-size: 17px;
+     }
+}
+
+@media screen and (max-width :796px) {
+    .card{
+        position: relative;
+        overflow: hidden;
+    }
+    .navlist{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        right: -70%;
+        width: 250px;
+        height: 100%;
+        justify-content: center;
+        background-color: rgb(111, 181, 208) ;
+
+    }
+    .navlist-active{
+        right: 0;
+    }
+    .trans{
+        display: block;
+        z-index: 5;
+
+    }
+    .product img{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(image/dot.webp);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact{
+    max-width: 400px;;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border :2px solid rgba(255,255,255,.2);
+    padding:25px 30px;
+    border-radius: 10px;
+}
+.contact .title{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    position:relative;
+}
+.contact form span{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    font-weight:bold ;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-box input{
+    height:40px;
+    width:100%;
+    outline:none;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.contact .button{
+        height: 45px;
+        margin: 45px 0;
+}
+.button input{
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        font-weight: 500px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        background:  linear-gradient(135deg,#71b7e6,rgb(13, 126, 170));
+}
